@@ -18,7 +18,7 @@ class AccueilDemande extends Component {
           <View style={styles.head}>
             <ImageBackground
               source={require('../../../assets/background7.png')}
-              style={image}>
+              style={styles.image}>
               <Icon name="cogs" size={35} color="#fff" style={styles.icon} />
               <Text style={styles.title}>Gestion de demandes</Text>
             </ImageBackground>

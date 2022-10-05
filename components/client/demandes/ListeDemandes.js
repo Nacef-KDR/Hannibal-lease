@@ -6,7 +6,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
   TouchableHighlight,
-
+  StyleSheet,
 } from 'react-native';
 
 import {List, Searchbar} from 'react-native-paper';
@@ -190,3 +190,43 @@ class ListDemandes extends Component {
 }
 
 export default ListDemandes;
+const style = StyleSheet.create({
+  container: {
+    alignContent: 'center',
+    marginBottom: 15,
+  },
+  searchIcon: {
+    padding: 10,
+  },
+  input: {
+    marginTop: 5,
+    marginBottom: 20,
+    marginStart: 5,
+    marginEnd: 5,
+    borderRadius: 45,
+  },
+  item: {
+    padding: 15,
+    backgroundColor: '#fff',
+    borderBottomColor: 'lightgrey',
+    borderBottomWidth: 1,
+  },
+  button: {
+    marginEnd: 10,
+    alignSelf: 'flex-end',
+    backgroundColor: '#8D1812',
+    color: 'white',
+    width: 30,
+  },
+  text: {
+    marginTop: 5,
+    marginBottom: 15,
+    marginStart: 10,
+    fontWeight: 'bold',
+  },
+  activator: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});

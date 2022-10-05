@@ -47,11 +47,11 @@ class Accueil extends Component {
     return (
       <ScrollView>
         <View style={styles.container}>
-          <View style={head}>
+          <View style={styles.head}>
             <ImageBackground
               source={require('../../assets/background7.png')}
               style={styles.image}>
-              <Icon name="home" size={35} color="#fff" style={icon} />
+              <Icon name="home" size={35} color="#fff" style={styles.icon} />
               <Text style={styles.title}>Accueil</Text>
             </ImageBackground>
           </View>
@@ -66,13 +66,13 @@ class Accueil extends Component {
                     <Text>de bord</Text>
                   </TouchableOpacity>
                 </View>
-                <View style={box}>
+                <View style={styles.box}>
                   <TouchableOpacity onPress={() => navigate('Profil')}>
                     <Icon name="user" size={25} style={styles.icon} />
                     <Text>Profil</Text>
                   </TouchableOpacity>
                 </View>
-                <View style={box}>
+                <View style={styles.box}>
                   <TouchableOpacity onPress={() => navigate('AccueilDemande')}>
                     <Icon name="list-ul" size={25} style={styles.icon} />
                     <Text>Demandes</Text>
@@ -94,7 +94,7 @@ class Accueil extends Component {
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigate('Messagerie')}>
                   <View style={styles.box}>
-                    <Icon name="envelope" size={25} style={icon} />
+                    <Icon name="envelope" size={25} style={styles.icon} />
                     <Badge
                       style={{
                         position: 'absolute',

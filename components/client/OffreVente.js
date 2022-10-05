@@ -58,7 +58,7 @@ class OffreVente extends Component {
   };
 
   render() {
-    const {container, label, checkboxContainer, accordion} = style;
+    
     const {navigate} = this.props.navigation;
     const {isChecked} = this.state;
     return this.state.isLoading ? (

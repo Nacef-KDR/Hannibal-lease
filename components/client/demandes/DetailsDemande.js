@@ -462,7 +462,7 @@ class DetailsDemande extends Component {
 }
 
 export default DetailsDemande;
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
     containerAccordion: {
       backgroundColor: '#fff',
       paddingTop: 20,

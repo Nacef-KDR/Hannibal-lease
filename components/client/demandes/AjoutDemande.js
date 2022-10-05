@@ -802,7 +802,7 @@ const AjoutDemande = (props) => {
 
 export default AjoutDemande;
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

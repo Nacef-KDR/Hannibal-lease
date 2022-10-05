@@ -65,7 +65,7 @@ class DashboardClient extends Component {
       },
     ];
     const screenWidth = Dimensions.get('window').width;
-    const {text, row, box, boxtext, boxtext2} = style;
+    
     const stat = this.state.stat;
 
     return (

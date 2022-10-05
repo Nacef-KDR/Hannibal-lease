@@ -16,7 +16,7 @@ class AccueilSAV extends Component {
     return (
       <ScrollView>
         <View style={styles.container}>
-          <View style={head}>
+          <View style={styles.head}>
             <ImageBackground
               source={require('../../../assets/background7.png')}
               style={styles.image}>
@@ -25,7 +25,7 @@ class AccueilSAV extends Component {
             </ImageBackground>
           </View>
           <View style={styles.containercontent}>
-            <View style={cstyles.ontent}>
+            <View style={styles.content}>
               <View style={styles.row}>
                 <TouchableOpacity onPress={() => navigate('Accueil')}>
                   <View style={styles.box}>

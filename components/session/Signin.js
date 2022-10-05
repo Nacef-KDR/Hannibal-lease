@@ -16,7 +16,7 @@ import LocalStorage from '../storage/LocalStorage';
 import {useForm, Controller} from 'react-hook-form';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-function Signin (navigation) {
+function Signin ({navigation}) {
   const {control, handleSubmit, errors} = useForm();
   const [hidePass, setHidePass] = useState(true);
 
@@ -71,7 +71,7 @@ function Signin (navigation) {
            <Text style={styles.error}>* Entrez un email valide</Text>
           <Controller
             control={control}
-            render={({onChange, onBlur, value}) => (
+            render={({ field: {onChange, onBlur, value}}) => (
               <TextInput
                 style={styles.input}
                 label="Email"
@@ -88,7 +88,7 @@ function Signin (navigation) {
            <Text style={styles.error}>* Entrez votre mot de passe</Text>
           <Controller
             control={control}
-            render={({onChange, onBlur, value}) => (
+            render={({field : {onChange, onBlur, value}}) => (
               <View style={styles.rowCol}>
                 <TextInput
                   style={styles.textInputShow}

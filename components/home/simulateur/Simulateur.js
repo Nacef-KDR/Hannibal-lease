@@ -129,7 +129,7 @@ class Simulateur extends Component {
               label="Montant d’autofinancement (TTC)"
               keyboardType="numeric"
               style={styles.input}
-            //  value={this.state.Txtautofi}
+             //value={this.state.Txtautofi}
               value={
                 (this.state.Txtautofi = Number.isNaN(Number(mntAutoFinancement))
                   ? '0.000'

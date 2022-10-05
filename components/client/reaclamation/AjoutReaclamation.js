@@ -81,7 +81,7 @@ class AjoutReclamation extends Component {
 }
 
 export default AjoutReclamation;
-const styles= StyleSheet.create({
+const style= StyleSheet.create({
     container: {
       alignContent: 'center',
       alignItems: 'center',
